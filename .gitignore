@@ -1,0 +1,19 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/bootstrap/cache/*.php
+!/bootstrap/cache/.gitignore
+
+# Large backups, configurations, test scripts, and database dumps
+vps_credentials_and_guide.txt
+test_login.php
+test_ports.php
+*.sql
