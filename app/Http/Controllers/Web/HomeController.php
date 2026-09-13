@@ -101,4 +101,7 @@ class HomeController extends Controller
 
         return response()->json(['data' => Cookie::get('sidebar')]);
     }
+    public function sitemap(){
+        return response()->view('web/sitemap/sitemap')->header('Content-Type', 'text/xml');
+    }
 }

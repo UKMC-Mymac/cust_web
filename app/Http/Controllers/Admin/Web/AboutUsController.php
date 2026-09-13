@@ -123,7 +123,4 @@ class AboutUsController extends Controller
 
         return redirect()->back();
     }
-    public function sitemap(){
-        return response()->view('web/sitemap/sitemap')->header('Content-Type', 'text/xml');
-    }
 }

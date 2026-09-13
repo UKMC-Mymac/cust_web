@@ -24,6 +24,7 @@ Route::middleware(['XSS'])->namespace('Web')->group(function () {
     //     return view('web.custom.index');
     // })->name('home');
     Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/sitemap', 'HomeController@sitemap')->name('sitemap');
     // Course Route
     Route::get('/academic/schools', 'CourseController@index')->name('academic');
     Route::get('/academic/school/{slug}', 'CourseController@show')->name('academic.single');
