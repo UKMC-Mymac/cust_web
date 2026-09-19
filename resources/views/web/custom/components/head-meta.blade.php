@@ -23,14 +23,16 @@
 <meta name="twitter:site" content="{!! '@'.str_replace(' ', '', $setting->title ?? 'CUST') !!}" />
 <meta name="twitter:title" content="{{ $setting->title ?? 'Central University of Science and Technology' }}" />
 <meta name="twitter:description" content="{!! str_limit(strip_tags($setting->meta_description ?? 'Central University of Science and Technology'), 160, ' ...') !!}" />
+<link rel="icon" type="image/png" href="{{ asset('icons/favicon.png') }}">
 
-<link rel="icon" type="image/png" href="{{ isset($setting->favicon_path) ? asset('/uploads/setting/'.$setting->favicon_path) : asset('dist/images/favicon-180x180.png') }}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ isset($setting->favicon_path) ? asset('/uploads/setting/'.$setting->favicon_path) : asset('dist/images/apple-icon-180x180.png') }}">
+{{-- <link rel="icon" type="image/png" href="{{ isset($setting->favicon_path) ? asset('/uploads/setting/'.$setting->favicon_path) : asset('dist/images/favicon-180x180.png') }}"> --}}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('icons/favicon.png') }}">
+{{-- <link rel="apple-touch-icon" sizes="180x180" href="{{ isset($setting->favicon_path) ? asset('/uploads/setting/'.$setting->favicon_path) : asset('dist/images/apple-icon-180x180.png') }}"> --}}
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Saira+Condensed:wght@300;400&family=Saira+Extra+Condensed&display=swap" rel="stylesheet">
+{{-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Saira+Condensed:wght@300;400&family=Saira+Extra+Condensed&display=swap" rel="stylesheet"> --}}
 
 <!-- All CSS File -->
 <link rel="stylesheet" href="{{ asset('dist/css/vendor/bootstrap.min.css') }}">

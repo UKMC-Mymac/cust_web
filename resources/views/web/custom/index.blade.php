@@ -23,9 +23,9 @@
         @include('web.custom.sections.campus-life')
     @endif
 
-    @if(!isset($setting->web_sections['clubs']) || $setting->web_sections['clubs'] == 1)
+    {{-- @if(!isset($setting->web_sections['clubs']) || $setting->web_sections['clubs'] == 1)
         @include('web.custom.sections.clubs')
-    @endif
+    @endif --}}
 
     @if(!isset($setting->web_sections['testimonials']) || $setting->web_sections['testimonials'] == 1)
         @include('web.custom.sections.testimonials')

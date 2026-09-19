@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="{{ asset('uploads/setting/'.$setting->favicon_path) }}" type="image/x-icon">
     @endif
     @endif
-
+    <link rel="icon" type="image/png" href="{{ asset('icons/favicon.png') }}">
     <!-- fontawesome icon -->
     <link rel="stylesheet" href="{{ asset('fonts/fontawesome/css/fontawesome-all.min.css') }}">
     <!-- toastr css -->
@@ -65,13 +65,12 @@
 <body>
 
     <!-- [ Pre-loader ] start -->
-    <div class="loader-bg">
+    {{-- <div class="loader-bg">
         <div class="loader-track">
             <div class="loader-fill"></div>
         </div>
-    </div>
+    </div> --}}
     <!-- [ Pre-loader ] End -->
-
     <!-- [ navigation menu ] start -->
     <nav class="pcoded-navbar drp-icon-style3 active-lightblue title-lightblue navbar-lightblue brand-lightblue navbar-image-4 menu-item-icon-style5 {{\Cookie::get('sidebar')}}">
         <div class="navbar-wrapper">
