@@ -7,6 +7,7 @@
 @section('meta_keywords', 'CUST, University, Education, Admission, Programs, Academics')
 
 @section('content')
+   {{-- this is a comment  --}}
     @if(!isset($setting->web_sections['hero']) || $setting->web_sections['hero'] == 1)
         @include('web.custom.sections.hero')
     @endif
