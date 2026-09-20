@@ -32,7 +32,7 @@
                                 </a>
                             </li>
                             @endisset
-
+ 
                               @isset($topbarSetting->phone)
                           <li>
                             <a href="tel:{{ $topbarSetting->phone ?? '' }}">
@@ -57,10 +57,10 @@
             <i class="far fa-bars"></i>
         </button>
     </div>
-
+ 
     <!-- Main Menu -->
     @include('web.custom.components.navigation')
-
+ 
     <!-- Mobile Menu -->
     @include('web.custom.components.mobile-navigation')
 </header>
