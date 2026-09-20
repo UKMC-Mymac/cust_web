@@ -6,7 +6,7 @@
                 <div class="row align-items-center">
                     <div class="col">
                         <div class="header-left d-flex align-items-center">
-                            <div class="header-logo d-none">
+                            <div class="header-logo ">
                                 <a href="<?php echo e(route('home')); ?>">
                                     <img src="<?php echo e(asset('dist/images/logo-white.png')); ?>" alt="CUST Logo" />
                                 </a>
