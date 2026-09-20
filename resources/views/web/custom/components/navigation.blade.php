@@ -6,7 +6,7 @@
                 <div class="row align-items-center">
                     <div class="col">
                         <div class="header-left d-flex align-items-center">
-                            <div class="header-logo ">
+                            <div class="header-logo d-none">
                                 <a href="{{ route('home') }}">
                                     <img src="{{ asset('dist/images/logo-white.png') }}" alt="CUST Logo" />
                                 </a>
