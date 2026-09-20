@@ -12,6 +12,7 @@
 <meta name="keywords" content="Central University of Science and Technology">
 <?php endif; ?>
 <meta name="robots" content="INDEX,FOLLOW">
+<meta name="google-site-verification" content="XuCfIcXZ2761gwQ8ltZMX41SM3Chs63RgHt8PI2-o4w" />
 <meta name="author" content="<?php echo e($setting->author ?? 'Mishel, Mahir'); ?>">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta property="og:title" content="<?php echo e($setting->title ?? 'Central University of Science and Technology'); ?>" />

@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('title', 'Home'); ?>
 
 <?php $__env->startSection('meta_description', 'Central University of Science and Technology - A modern institution committed to transforming knowledge into employability and shaping the leaders of tomorrow.'); ?>
@@ -5,6 +7,7 @@
 <?php $__env->startSection('meta_keywords', 'CUST, University, Education, Admission, Programs, Academics'); ?>
 
 <?php $__env->startSection('content'); ?>
+   
     <?php if(!isset($setting->web_sections['hero']) || $setting->web_sections['hero'] == 1): ?>
         <?php echo $__env->make('web.custom.sections.hero', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <?php endif; ?>
