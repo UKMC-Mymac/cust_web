@@ -24,9 +24,7 @@
         <?php echo $__env->make('web.custom.sections.campus-life', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <?php endif; ?>
 
-    <?php if(!isset($setting->web_sections['clubs']) || $setting->web_sections['clubs'] == 1): ?>
-        <?php echo $__env->make('web.custom.sections.clubs', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-    <?php endif; ?>
+    
 
     <?php if(!isset($setting->web_sections['testimonials']) || $setting->web_sections['testimonials'] == 1): ?>
         <?php echo $__env->make('web.custom.sections.testimonials', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>

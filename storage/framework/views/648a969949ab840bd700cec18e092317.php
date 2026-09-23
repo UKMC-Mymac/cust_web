@@ -195,4 +195,5 @@
 	</div>
 
 </div>
+
 <?php /**PATH D:\office_project\cust\resources\views/web/custom/components/chat.blade.php ENDPATH**/ ?>

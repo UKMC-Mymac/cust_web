@@ -1,33 +1,30 @@
-<header class="th-header header-layout1">
-    <div class="header-top">
+
+<header class="th-header header-layout1 " style="background-color: white">
+    <div class="header-top d-none d-lg-block">
         <div class="container-fluid th-container4">
             <div class="row justify-content-start justify-content-md-between align-items-top gy-2">
-                <div class="col-auto mt-0 mt-sm-2">
-                    <div class="header-logo p-0 ms-0">
-                        <a href="<?php echo e(route('home')); ?>">
-                            <img class="d-block" src="<?php echo e(asset('dist/images/logo-white.png')); ?>" alt="CUST logo">
-                        </a>
-                    </div>
+                <div class="col-auto mt-0 mt-sm-2" style="height: 80px;">
+                    
                 </div>
                 <div class="col-auto d-none d-md-block">
                     <div class="header-links">
                         <ul class="header-right-wrap">
                             <?php if(auth()->guard('web')->check()): ?>
                                 <li>
-                                    <i class="fa-solid fa-user"></i><a href="<?php echo e(route('admin.dashboard.index')); ?>">Dashboard</a>
+                                    <i class="fa-solid fa-user" style="color:black"></i><a style="color:black;" href="<?php echo e(route('admin.dashboard.index')); ?>">Dashboard</a>
                                 </li>
                             <?php else: ?>
                                 <li>
-                                    <i class="fa-solid fa-user"></i><a href="<?php echo e(isset($custom_urls['student_login']) ? $custom_urls['student_login']->resolved_url : '#'); ?>">Student Login</a>
+                                    <i class="fa-solid fa-user" style="color:black" ></i><a style="color:black" href="<?php echo e(isset($custom_urls['student_login']) ? $custom_urls['student_login']->resolved_url : '#'); ?>">Student Login</a>
                                 </li>
                                 <li>
-                                    <i class="fa-solid fa-user-tie"></i><a href="<?php echo e(isset($custom_urls['staff_login']) ? $custom_urls['staff_login']->resolved_url : '#'); ?>">Staff Login</a>
+                                    <i class="fa-solid fa-user-tie" style="color:black" ></i><a style="color:black" href="<?php echo e(isset($custom_urls['staff_login']) ? $custom_urls['staff_login']->resolved_url : '#'); ?>">Staff Login</a>
                                 </li>
                             <?php endif; ?>
                            <?php if(isset($topbarSetting->email)): ?>
                             <li>
-                                <a href="mailto:<?php echo e($topbarSetting->email ?? ''); ?>">
-                                    <i class="fa-sharp fa-solid fa-envelope pe-1"></i>
+                                <a style="color:black" href="mailto:<?php echo e($topbarSetting->email ?? ''); ?>">
+                                    <i class="fa-sharp fa-solid fa-envelope pe-1" ></i>
                                     <?php echo e($topbarSetting->email ?? ''); ?>
 
                                 </a>
@@ -36,8 +33,8 @@
  
                               <?php if(isset($topbarSetting->phone)): ?>
                           <li>
-                            <a href="tel:<?php echo e($topbarSetting->phone ?? ''); ?>">
-                                <i class="fa-sharp fa-solid fa-phone pe-1"></i>
+                            <a style="color:black" href="tel:<?php echo e($topbarSetting->phone ?? ''); ?>">
+                                <i class="fa-sharp fa-solid fa-phone pe-1" ></i>
                                 <?php echo e($topbarSetting->phone ?? ''); ?>
 
                             </a>

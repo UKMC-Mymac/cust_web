@@ -1,5 +1,5 @@
 <div class="preloader">
-    <button class="th-btn preloaderCls">Cancel Preloader</button>
+    
     <div id="preloader_container">
         <div class="logo-container">
             <img class="colored-logo" src="<?php echo e(asset('dist/images/logo.png')); ?>" alt="" />

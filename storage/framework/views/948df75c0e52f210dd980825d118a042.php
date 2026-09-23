@@ -67,9 +67,7 @@
             <?php endif; ?>
         </div>
     </div>
-        <div class="cat-shape shape-mockup jump" data-bottom="15%" data-left="10%">
-            <img src="<?php echo e(asset('dist/img/shape/cat-3-1.png')); ?>" alt="CUST">
-        </div>
+        
         <div class="shape-mockup" data-bottom="0%" data-right="0%">
             <img src="<?php echo e(asset('dist/img/shape/feature-shep-2-home-1.png')); ?>" alt="CUST">
         </div>
