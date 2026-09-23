@@ -33,7 +33,7 @@
                                 </a>
                             </li>
                             <?php endif; ?>
-
+ 
                               <?php if(isset($topbarSetting->phone)): ?>
                           <li>
                             <a href="tel:<?php echo e($topbarSetting->phone ?? ''); ?>">
@@ -55,11 +55,10 @@
             <i class="far fa-bars"></i>
         </button>
     </div>
-
+ 
     <!-- Main Menu -->
     <?php echo $__env->make('web.custom.components.navigation', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-
+ 
     <!-- Mobile Menu -->
     <?php echo $__env->make('web.custom.components.mobile-navigation', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-</header>
-<?php /**PATH D:\office_project\cust\resources\views/web/custom/components/header.blade.php ENDPATH**/ ?>
+</header><?php /**PATH D:\office_project\cust\resources\views/web/custom/components/header.blade.php ENDPATH**/ ?>
