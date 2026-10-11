@@ -178,11 +178,11 @@
         </div>
 
         <!-- Pagination -->
-        @if($results->count() > 0 || $results->total() > 0)
-            <div class="d-flex justify-content-center mt-4">
-                {{ $results->appends(request()->query())->links('pagination::bootstrap-4') }}
-            </div>
-        @endif
+            @if($results->count() > 0 || $results->total() > 0)
+                <div class="d-flex justify-content-center mt-4">
+                    {{ $results->appends(request()->query())->links('pagination::bootstrap-4') }}
+                </div>
+            @endif
         @else
             <div class="text-center py-5">
                 <div class="mb-3">
@@ -195,6 +195,7 @@
                     {{ __('Please log in to view the academic results.') }}
                 </p>
             </div>
+        
         @endif
 
     </div>
