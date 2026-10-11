@@ -89,7 +89,6 @@
         <!-- Result List -->
         @if(Auth::check())
         <div class="bg-white rounded-3 shadow-sm overflow-hidden border">
-
             @forelse($results as $result)
                 @php
                     $itemRoute = route('result.show', ['result' => $result->id]);
