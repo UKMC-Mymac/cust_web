@@ -2,7 +2,6 @@
 @section('title', $result->title)
 
 @section('content')
-
 <section class="py-5 bg-light">
     <div class="container">
 
@@ -176,7 +175,6 @@
         </div>
     </div>
 </section>
-
 <style>
     .related-result-item {
         transition: background-color 0.15s ease-in-out;
@@ -185,5 +183,4 @@
         background-color: #f8fafc;
     }
 </style>
-
 @endsection
