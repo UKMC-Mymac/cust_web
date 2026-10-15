@@ -87,8 +87,8 @@
         </div>
 
         <!-- Result List -->
+        @if(Auth::check())
         <div class="bg-white rounded-3 shadow-sm overflow-hidden border">
-
             @forelse($results as $result)
                 @php
                     $itemRoute = route('result.show', ['result' => $result->id]);
@@ -178,10 +178,24 @@
         </div>
 
         <!-- Pagination -->
-        @if($results->count() > 0 || $results->total() > 0)
-            <div class="d-flex justify-content-center mt-4">
-                {{ $results->appends(request()->query())->links('pagination::bootstrap-4') }}
+            @if($results->count() > 0 || $results->total() > 0)
+                <div class="d-flex justify-content-center mt-4">
+                    {{ $results->appends(request()->query())->links('pagination::bootstrap-4') }}
+                </div>
+            @endif
+        @else
+            <div class="text-center py-5">
+                <div class="mb-3">
+                    <i class="fa-solid fa-user-lock fa-3x text-muted"></i>
+                </div>
+                <h5 class="fw-bold mb-2">
+                    {{ __('Access Restricted') }}
+                </h5>
+                <p class="text-muted mb-0">
+                    {{ __('Please log in to view the academic results.') }}
+                </p>
             </div>
+        
         @endif
 
     </div>
