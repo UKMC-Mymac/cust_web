@@ -34,12 +34,32 @@
                             @endisset
  
                               @isset($topbarSetting->phone)
-                          <li>
+                          {{-- <li>
                             <a href="tel:{{ $topbarSetting->phone ?? '' }}">
                                 <i class="fa-sharp fa-solid fa-phone pe-1"></i>
-                                {{ $topbarSetting->phone ?? '' }}
+                                {{ $topbarSetting->phone ?? '' }} , +8801347535501
                             </a>
+                        </li> --}}
+                        <li class="topbar-contact-item">
+                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                <a href="tel:{{ $topbarSetting->phone ?? '' }}"
+                                class="topbar-phone-link">
+                                    <i class="fa-solid fa-phone me-1"></i>
+                                    <span class="fw-semibold">{{ $topbarSetting->phone ?? '' }}</span>
+                                    <small class="ms-1">(Admissions)</small>
+                                </a>
+
+                                <span class="text-muted">|</span>
+
+                                <a href="tel:+8801347535501"
+                                class="topbar-phone-link">
+                                    <i class="fa-solid fa-phone me-1"></i>
+                                    <span class="fw-semibold">+880 1347-535501</span>
+                                    <small class="ms-1">(Enquiries)</small>
+                                </a>
+                            </div>
                         </li>
+                          
                             @endisset
                             {{-- <li>
                                 <a href="javascript:void(0)" class="header-search searchBoxToggler">

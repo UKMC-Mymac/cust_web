@@ -52,9 +52,13 @@
                                     <div>
                                         <h6 class="fw-semibold text-dark mb-1">{{ __('Phone') }}</h6>
                                         <a href="tel:{{ $contact->phone }}" class="text-danger text-decoration-none">
-                                            {{ $contact->phone }}
+                                            {{ $contact->phone }} (For Admissions)
+                                        </a><br>
+                                        <a href="tel:+880 1347-535501" class="text-danger text-decoration-none">
+                                            +880 1347-535501 (For Enquiries)
                                         </a>
                                     </div>
+                                    
                                 </div>
                             @endif
                            

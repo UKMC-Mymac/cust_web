@@ -25,7 +25,17 @@
 
                                 @isset($topbarSetting->phone)
                                 <a href="tel:{{ $topbarSetting->phone }}">
-                                    <span class="footer-info-icon"><i class="fa-solid fa-phone"></i></span>{{ $topbarSetting->phone }}
+                                    <span class="footer-info-icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </span>
+                                    {{ $topbarSetting->phone }} <span>(For Admissions)</span>
+                                </a>
+
+                                <a href="tel:+8801347535501">
+                                    <span class="footer-info-icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </span>
+                                    +880 1347-535501 <span>(For Enquiries)</span>
                                 </a>
                                 @endisset
                             </div>

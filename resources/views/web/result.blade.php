@@ -87,7 +87,7 @@
         </div>
 
         <!-- Result List -->
-        @if(Auth::check())
+        @if(Auth::check() && Auth::user()->email=='info@cust.ac.bd')
         <div class="bg-white rounded-3 shadow-sm overflow-hidden border">
             @forelse($results as $result)
                 @php
